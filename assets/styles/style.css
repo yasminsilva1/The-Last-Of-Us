@@ -1,0 +1,122 @@
+/* CONFIGURAÇÕES GERAIS */
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+/* TELA 1 - HOME */
+
+.home {
+    height: 900px;
+    background-image: url(../images/backgroundHome.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+}
+
+header > figure > img {
+    width: 254px;
+    height: 144px;
+}
+
+nav {
+    width: 70%;
+}
+
+nav > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul > li > a {
+    color: var(--color-grey-1);
+    font-family: Iceland;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: left;
+}
+
+ul > li > a:hover {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+main {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1 {
+    font-size: 92px;
+    font-weight: 400;
+    line-height: 89px;
+    text-align: left;
+    color: var(--color-grey-2);
+}
+
+main > p {
+    width: 506px;
+    font-family: 'Actor', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+    color: var(--text-color-1);
+}
+
+button {
+    height: 46px;
+    width: 180px;
+    margin: 5px;
+    font-family: "Iceland", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+    cursor: pointer;
+    filter: drop-shadow(0px 2px 2px #000000);
+    -webkit-filter: drop-shadow(0px 2px 2px #000000);
+}
+
+
+.active {
+    background-color: var(--color-secondary);
+    color: var(--color-grey-2);
+}
+
+.active > span {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 5px 35px 5px 35px;
+    border: 1.5px solid var(--color-grey-2);
+}
+
+.active:hover {
+    border: 1px solid var(--color-grey-2);
+}
+
+.inactive {
+    background-color: var(--color-grey-1);
+    color: var(--color-grey-2);
+}
+
+.inactive > span {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 5px 20px 5px 20px;
+    border: 1.5px solid #ffffff;
+}
+
+.inactive:hover {
+    border: 1px solid #ffffff;
+}
