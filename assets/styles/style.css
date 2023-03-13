@@ -6,6 +6,12 @@
     justify-content: space-between;
 }
 
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
 .container {
     width: 80vw;
     margin: 0 auto;
@@ -14,7 +20,7 @@
 /* TELA 1 - HOME */
 
 .home {
-    height: 900px;
+    height: 770px;
     background-image: url(../images/backgroundHome.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,7 +33,7 @@ header > figure > img {
 }
 
 nav {
-    width: 70%;
+    width: 50%;
 }
 
 nav > ul {
@@ -37,7 +43,7 @@ nav > ul {
 }
 
 ul > li > a {
-    color: var(--color-grey-1);
+    color: var(--color-grey-2);
     font-family: Iceland;
     font-size: 26px;
     font-weight: 500;
@@ -51,7 +57,7 @@ ul > li > a:hover {
 }
 
 main {
-    border: 1px solid red;
+    width: 80vw;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -119,4 +125,64 @@ button {
 
 .inactive:hover {
     border: 1px solid #ffffff;
+}
+
+main > section {
+    height: 200px;
+    margin-top: 100px;
+}
+
+h3 {
+    height: 32px;
+    width: 100%;
+    font-family: 'Iceland', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    text-align: left;
+    color: var(--color-grey-2);
+}
+
+section > ul {
+    width: 850px;
+    height: 140px;
+}
+
+section > ul > li {
+    height: 100%;
+    width: 260px;
+}
+
+.survival {
+    background-image: url("../images/inside/survival.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+}
+
+.relationship {
+    background-image: url("../images/inside/relationship.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+}
+
+.adventure {
+    background-image: url("../images/inside/adventure.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--color-grey-2);
+    cursor: pointer;
+}
+
+.list:hover {
+    text-decoration: underline;
 }
