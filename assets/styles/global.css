@@ -18,8 +18,7 @@
 
 body {
   font-family: "Iceland", sans-serif;
-  /* width: 100vw;
-  height: 100vh; */
+  height: 100vh;
 }
 
 ::-webkit-scrollbar {
